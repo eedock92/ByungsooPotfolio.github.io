@@ -23,26 +23,26 @@ section {
   align-items: center;
 }
 
-.water {
-  position: relative;
-  display: flex;
-  overflow: visible;
+.banner .water {
+
   width: 1200px;
-  height: 50px;
-  margin-top: 500px;
-  background: #f7f7f7;
+  height: 150px;
+  border: 5px solid : white;
+  background: url("../img/water.png");
+  background-repeat: repeat-x;
   z-index: 100;
+  animation: flow 2s linear infinite;
 }
 
-.banner .water:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
+@keyframes flow {
+  0% {
+    background-position : -1200px 200px;
+  }
+  100% {
+    background-position : 0px 200px;
+  }
 }
 
-.banner .water:nth-child(2) {
-  color: #03a9f4;
-  animation: animate 4s ease-in-out;
-}
 
 .banner h2 {
   font-size: 3em;
