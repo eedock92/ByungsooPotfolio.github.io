@@ -205,12 +205,39 @@ img {
   max-width: 100%;
 }
 
-.services .skills-content .left .text {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
+/*LEFT*/
+
+.services .skills-content .left .bars {
+  margin-bottom: 15px;
 }
 
+.services .skills-content .left .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .skills-content .left .span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.services .skills-content .left .line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+
+.services .skills-content .left .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/*Right*/
 .services .skills-content .right .bars {
   margin-bottom: 15px;
 }
@@ -237,13 +264,12 @@ img {
   content: "";
   position: absolute;
   height: 100%;
-
   left: 0;
   top: 0;
 }
 
 .skills-content .right .html::before {
-  width: 90%;
+  width: 70%;
   background: crimson;
 }
 
@@ -265,6 +291,21 @@ img {
 .skills-content .right .MYSQL::before {
   width: 70%;
   background: blue;
+}
+
+.skills-content .right .MONGODB::before {
+  width: 40%;
+  background: green;
+}
+
+.skills-content .right .NODE::before {
+  width: 50%;
+  background: rgb(103, 252, 103);
+}
+
+.skills-content .right .JAVA::before {
+  width: 60%;
+  background: rgb(255, 123, 0);
 }
 
 .services .content {
