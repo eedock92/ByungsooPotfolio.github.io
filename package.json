@@ -1,0 +1,24 @@
+{
+  "name": "byungsoopotfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eedock92/ByungsooPotfolio.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://byungsoopotfolio.github.io/mywebsite",
+  "bugs": {
+    "url": "https://github.com/eedock92/ByungsooPotfolio.github.io/issues"
+  },
+  "homepage": "https://github.com/eedock92/ByungsooPotfolio.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^3.2.1"
+  }
+}
